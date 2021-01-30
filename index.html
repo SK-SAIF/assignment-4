@@ -11,6 +11,7 @@
         rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -111,7 +112,13 @@
 
         <div class="booking-form" id="secondPage">
             <h1>Congratulations!</h1>
-
+            <h4>Select Your Payment Method</h4>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-amazon-pay"></i>
+            <button>Confirm</button>
+            <button>Proceed</button>
         </div>
     </main>
 
@@ -160,7 +167,8 @@
         document.getElementById("confirmButton").addEventListener("click",function(){
             document.getElementById("booking-ticket").style.display="none";
             document.getElementById("secondPage").style.display="block";
-        })
+        });
+
     </script>
     
 </body>
