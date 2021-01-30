@@ -146,7 +146,6 @@
                 Cost=NewCount*100;
             }
             
-
             allCalculations();
         }
         
@@ -166,7 +165,7 @@
             let Total=VAT+subtotal;
             document.getElementById("total").innerText=Total;
         }
-
+        
         document.getElementById("confirmButton").addEventListener("click",function(){
             document.getElementById("booking-ticket").style.display="none";
             document.getElementById("secondPage").style.display="block";
@@ -174,8 +173,7 @@
         document.getElementById("returnButton").addEventListener("click",function(){
             document.getElementById("booking-ticket").style.display="block";
             document.getElementById("secondPage").style.display="none";
-        })
-
+        });
     </script>
     
 </body>
