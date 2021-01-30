@@ -11,7 +11,7 @@
         rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 
 <body>
@@ -112,13 +112,16 @@
 
         <div class="booking-form" id="secondPage">
             <h1>Congratulations!</h1>
+            <hr><br>
             <h4>Select Your Payment Method</h4>
-            <i class="fab fa-cc-paypal"></i>
-            <i class="fab fa-cc-visa"></i>
-            <i class="fab fa-cc-paypal"></i>
-            <i class="fab fa-cc-amazon-pay"></i>
-            <button>Confirm</button>
-            <button>Proceed</button>
+            <br>
+            <button class="paybutton"><i class="fa fa-cc-visa" style="font-size:120px;color:red"></i></button>
+            
+            <button class="paybutton"><i class="fa fa-cc-paypal" style="font-size:120px;color:green"></i></button>
+            <br>
+            
+            <button class="LastTwoButton">Proceed</button>
+            <button class="LastTwoButton" id="returnButton">Return</button>
         </div>
     </main>
 
@@ -168,6 +171,10 @@
             document.getElementById("booking-ticket").style.display="none";
             document.getElementById("secondPage").style.display="block";
         });
+        document.getElementById("returnButton").addEventListener("click",function(){
+            document.getElementById("booking-ticket").style.display="block";
+            document.getElementById("secondPage").style.display="none";
+        })
 
     </script>
     
